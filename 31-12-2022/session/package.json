@@ -2,7 +2,6 @@
 	"name": "namaste-react-live",
 	"version": "1.0.0",
 	"description": "this is live course",
-	"main": "app.js",
 	"scripts": {
 		"test": "jest"
 	},

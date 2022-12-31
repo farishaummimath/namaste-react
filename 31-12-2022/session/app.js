@@ -1,8 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 /**
  * parcel does Hot module rendering
  * via file watcher algorithm -C++
+ *
+ *Parcel
+ - Minify
+ -Cleaning code
+ - dev and production build
+ - super fast build algo
+ - image optimization
+ - caching while development
+ - compression
+ - compatible with older versions of browser
+ - HTTPS on dev
+ -- port number
+ -- consistent hashing algo to cache things
+ 
+
  */
 const h1 = React.createElement(
 	"h1",
