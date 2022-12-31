@@ -17,6 +17,7 @@ import ReactDOM from "react-dom/client";
  -- port number
  -- consistent hashing algo to cache things
  -- zero config
+ -- packages take care of transitive dependenciess
  
 
  */
