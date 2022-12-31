@@ -16,6 +16,7 @@ import ReactDOM from "react-dom/client";
  - HTTPS on dev
  -- port number
  -- consistent hashing algo to cache things
+ -- zero config
  
 
  */
