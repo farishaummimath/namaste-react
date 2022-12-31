@@ -1,19 +1,24 @@
 
-* What is Emmet?
+## What is Emmet?
 
     Emmet is a plug in for many popular text editors which greatly improves HTML & CSS workflow.
+    
     ## 
 * Difference between a Library and Framework?
+
+## What is CDN? Why do we use it?
+
+    ## 
+## Why is React known as React?
+
 ## 
-* What is CDN? Why do we use it?
+## What is crossorigin in script tag?
+
 ## 
-* Why is React known as React?
+# What is diference between React and ReactDOM
+
 ## 
-* What is crossorigin in script tag?
+## What is difference between react.development.js and react.production.js files via CDN?
 ## 
-* What is diference between React and ReactDOM
-## 
-* What is difference between react.development.js and react.production.js files via CDN?
-## 
-* What is async and defer?
+## What is async and defer?
 ## 
