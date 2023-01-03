@@ -16,8 +16,8 @@
 
 ## What is CDN? Why do we use it?
   
-   CDN stands for content delivery network which refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
-
+    CDN stands for content delivery network which refers to a geographically distributed group of servers which work together 
+    to provide fast delivery of Internet content.
 
 ## Why is React known as React?
 
@@ -26,10 +26,13 @@
 
 ## What is crossorigin in script tag?
 
-       * The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data.
+       * The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, 
+         defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for 
+         the element's fetched data.
        * Depending on the element, the attribute can be a CORS settings attribute.
        * CORS refers to Cross-Origin Resource Sharing, 
-       * It is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
+       * It is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from 
+         which a browser should permit loading resources
  
 ## What is diference between React and ReactDOM?
     
