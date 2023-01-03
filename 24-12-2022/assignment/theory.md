@@ -36,13 +36,20 @@
  
 ## What is diference between React and ReactDOM?
     
-    React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
-    The react package holds the react source for components, state, props and all the code that is react.
-
-The react-dom package as the name implies is the glue between React and the DOM.
+    * React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+    * The react package holds the react source for components, state, props and all the code that is react.
+    * The react-dom package as the name implies is the glue between React and the DOM.
 
 ## What is difference between react.development.js and react.production.js files via CDN?
-
+        
+        * The react.development.js versions  are only meant for development, and are not suitable for production. 
+        * The react.production.js files are minified  and   optimized production versions of React .
+        * react.development.js provides us with many helpful warnings and tools for easily detecting and fixing problems 
+          in our application code and eliminating potential bugs. However, these extra codes increase bundle size and hence, a slower running app.
+        * The production file minifies your code, optimises assets, and produces lighter weight source maps. 
+        * Also, the warning messages and other features present in development mode for debugging will be suppressed.
+        * As a result, the bundle size is drastically reduced and improves page load time. 
+        * React recommends utilising the production mode while deploying the application.
 
 ## What is async and defer?
 
