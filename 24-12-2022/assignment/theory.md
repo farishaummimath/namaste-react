@@ -56,9 +56,8 @@
     Whenever web browser starts parsing the HTML and it pauses when the script tag is reached(external script files) .  Parsing of HTML is blocked and browser makes a request to fetch/download the respective script file. Once the script is fetched, it gets executed and then HTML parsing resumes again. At this point JavaScript files are blocking the rendering of HTML. To prevent this we can use async and defer attributes.
     
       * async - With async (asynchronous) attribute, the HTML parsing continues until the browser fetches the script file over the network so parsing and script fetching happens in parallel (as shown in the figure below). Once the scripts are available in the browser, HTML parsing is paused and scripts are executed. Once the execution is complete, HTML parsing continues.
-      ```
-        <script async src="https://google-analytics.com/analytics.js"></script>
-       ```
-        
+        <script async src="file.js"></script>     
       * defer - With defer attribute, the script files are downloaded in parallel while the HTML parsing continues. But the execution is deferred until the HTML parsing is done. The downloaded scripts are executed only when the browser finishes its HTML parsing.
+        <script defer src="file.js"></script>     
+
  
