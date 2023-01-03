@@ -26,8 +26,10 @@
 
 ## What is crossorigin in script tag?
 
-   The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. Depending on the element, the attribute can be a CORS settings attribute.
-    CORS refers to Cross-Origin Resource Sharing, which is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
+   * The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data.
+   * Depending on the element, the attribute can be a CORS settings attribute.
+   * CORS refers to Cross-Origin Resource Sharing, 
+   * It is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
  
 ## What is diference between React and ReactDOM?
     
@@ -38,7 +40,7 @@ The react-dom package as the name implies is the glue between React and the DOM.
 
 ## What is difference between react.development.js and react.production.js files via CDN?
 
-## 
+
 ## What is async and defer?
 
 ## 
