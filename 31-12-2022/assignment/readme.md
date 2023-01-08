@@ -12,7 +12,15 @@
   4. 
   [Parcel-vs-Webpack-info jpg](https://user-images.githubusercontent.com/14870340/211184083-5df64012-b48d-4d47-bcad-9a2cb668268f.jpeg)
   
-  
+ #  What is Tree Shaking?
+ 
+   1. Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.Module bundlers (e.g., webpack ) automatically remove dead code when bundling multiple JavaScript files into single files.
+   2. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+   
+ #  What is Hot Module Replacement?
+     
+    Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload. This can significantly   speed up development in a few ways: Retain application state which is lost during a full reload.It saves valuable development time by only updating what's changed.
+
   #  What is difference between `dependencies` vs `devDependencies`?
   
   | Dependency     | Dev Dependency      |
@@ -21,31 +29,16 @@
   |You require these packages to test and run your project on the localhost. |These types of dependencies are required during the web application development process but not while testing or executing it|
   |You can add dependencies to the package.json file by running the below command: **npm install <dependencies>** |For adding devDependencies to your project, run the below command: **npm install <dev_dependencies> --save-dev** |
 
- #  What is Tree Shaking?
- 
-    Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
-    Module bundlers (e.g., webpack ) automatically remove dead code when bundling multiple JavaScript files into single files.
-    This is important for preparing code that is production ready, for example with clean structures and minimal file size.
- 
- #  What is Hot Module Replacement?
-     
-     1. Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload.
-        This can significantly   speed up development in a few ways: Retain application state which is lost during a full reload.
- 
-     2. It saves valuable development time by only updating what's changed.
   
-  #  List down your favourite 5 superpowers of Parcel 
- 
+   #  List down your favourite 5 superpowers of Parcel 
      1. Hot reloading
-    As you make changes to your code, Parcel automatically rebuilds the changed files and updates your app in the browser.
-   By default, Parcel fully reloads the page, but in some cases it may perform Hot Module Replacement (HMR). HMR improves the development experience          by updating modules in the browser at runtime without needing a whole page refresh. This means that application state can be retained as you change        small things in your code. CSS changes are automatically applied via HMR with no page reload necessary. 
+    As you make changes to your code, Parcel automatically rebuilds the changed files and updates your app in the browser. By default, Parcel fully reloads the page, but in some cases it may perform Hot Module Replacement (HMR). HMR improves the development experience          by updating modules in the browser at runtime without needing a whole page refresh. This means that application state can be retained as you change        small things in your code. CSS changes are automatically applied via HMR with no page reload necessary. 
 
      2. Dev server
          Parcel’s builtin dev server is automatically started when you run the default parcel command, which is a shortcut for parcel serve. By default, it     starts a server at http://localhost:1234. If port 1234 is already in use, then a fallback port will be used. After Parcel starts, the location             where the dev server is listening will be printed to the terminal.
  
      3. Lazy mode
-        You can use the --lazy CLI flag to tell Parcel to defer building files until they are requested in the browser, which can significantly reduce development build times. The server starts quickly, and when you navigate to a page for the first time, Parcel builds only the files necessary for that page. When you navigate to another page, that page will be built on demand. If you navigate back to a page that was previously built, it loads instantly.
- `parcel 'pages/*.html' --lazy`
+        You can use the --lazy CLI flag to tell Parcel to defer building files until they are requested in the browser, which can significantly reduce development build times. The server starts quickly, and when you navigate to a page for the first time, Parcel builds only the files necessary for that page. When you navigate to another page, that page will be built on demand. If you navigate back to a page that was previously built, it loads instantly. **parcel 'pages/*.html' --lazy**
 
      4. Caching 
  
@@ -56,9 +49,30 @@
  
      5. HTTPS
 
-  #  What is `.gitignore`? What should we add and not add into it?
-  #  What is the difference between `package.json` and `package-lock.json`
+  #  What is `.gitignore`? What should we add and not add into it? 
+      gitignore - Specifies intentionally untracked files to ignore
+
+      We can include following 
+        1. Runtime files such as log, lock, cache, or temporary files.
+        2. Files with sensitive information, such as passwords or API keys.
+        3. Compiled code, such as .class or .o.
+        4. Dependency directories, such as /vendor or /node_modules .
+        5. Build directories, such as /public, /out, or /dist.
+        6. System files like .DS_Store or Thumbs.db
+        7. IDE or text editor configuration files.
+
+
+
+ 
+  #  What is the difference between `package.json` and `package-lock.json`?
+
+1. In Node.js, package.json is a versioning file used to install multiple packages in your project. As you initialize your node application, you will see three files installed in your app that is node_modules, package.json, and package.lock.json.
+ 2. A package.json file contains metadata about the project and also the functional dependencies that is required by the application.
+ 3. A package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json.
+  Let’s say if the current version of the package is 1.3.2 then it will save the version with (^) sign. Here caret(^) means, it will support any higher version with major version 1 for eg. 1.2.2. 
+
   #  Why should I not modify `package-lock.json`?
+     
   #  What is `node_modules` ? Is it a good idea to push that on git?
   #  What is the `dist` folder?
   #  What is `browserlists`
