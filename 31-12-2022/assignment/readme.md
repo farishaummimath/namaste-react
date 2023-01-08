@@ -24,6 +24,11 @@
 
      
   #  What is Tree Shaking?
+ 
+     Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+     Module bundlers (e.g., webpack ) automatically remove dead code when bundling multiple JavaScript files into single files.
+     This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+ 
   #  What is Hot Module Replacement?
   #  List down your favourite 5 superpowers of Parcel 
   #  What is `.gitignore`? What should we add and not add into it?
