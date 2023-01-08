@@ -30,7 +30,20 @@
      This is important for preparing code that is production ready, for example with clean structures and minimal file size.
  
   #  What is Hot Module Replacement?
+     
+     1. Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload.
+        This can significantly   speed up development in a few ways: Retain application state which is lost during a full reload.
+ 
+     2. It saves valuable development time by only updating what's changed.
+  
   #  List down your favourite 5 superpowers of Parcel 
+ 
+     1. Hot reloading
+     2. Dev server
+     3. Lazy mode
+     4. Caching
+     5. HTTPS
+
   #  What is `.gitignore`? What should we add and not add into it?
   #  What is the difference between `package.json` and `package-lock.json`
   #  Why should I not modify `package-lock.json`?
