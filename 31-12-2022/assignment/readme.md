@@ -21,15 +21,13 @@
   |You require these packages to test and run your project on the localhost. |These types of dependencies are required during the web application development process but not while testing or executing it|
   |You can add dependencies to the package.json file by running the below command: **npm install <dependencies>** |For adding devDependencies to your project, run the below command: **npm install <dev_dependencies> --save-dev** |
 
-
-     
-  #  What is Tree Shaking?
+ #  What is Tree Shaking?
  
-     Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
-     Module bundlers (e.g., webpack ) automatically remove dead code when bundling multiple JavaScript files into single files.
-     This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+    Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+    Module bundlers (e.g., webpack ) automatically remove dead code when bundling multiple JavaScript files into single files.
+    This is important for preparing code that is production ready, for example with clean structures and minimal file size.
  
-  #  What is Hot Module Replacement?
+ #  What is Hot Module Replacement?
      
      1. Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload.
         This can significantly   speed up development in a few ways: Retain application state which is lost during a full reload.
@@ -39,9 +37,23 @@
   #  List down your favourite 5 superpowers of Parcel 
  
      1. Hot reloading
+    As you make changes to your code, Parcel automatically rebuilds the changed files and updates your app in the browser.
+   By default, Parcel fully reloads the page, but in some cases it may perform Hot Module Replacement (HMR). HMR improves the development experience          by updating modules in the browser at runtime without needing a whole page refresh. This means that application state can be retained as you change        small things in your code. CSS changes are automatically applied via HMR with no page reload necessary. 
+
      2. Dev server
+         Parcel’s builtin dev server is automatically started when you run the default parcel command, which is a shortcut for parcel serve. By default, it     starts a server at http://localhost:1234. If port 1234 is already in use, then a fallback port will be used. After Parcel starts, the location             where the dev server is listening will be printed to the terminal.
+ 
      3. Lazy mode
-     4. Caching
+        You can use the --lazy CLI flag to tell Parcel to defer building files until they are requested in the browser, which can significantly reduce development build times. The server starts quickly, and when you navigate to a page for the first time, Parcel builds only the files necessary for that page. When you navigate to another page, that page will be built on demand. If you navigate back to a page that was previously built, it loads instantly.
+ `parcel 'pages/*.html' --lazy`
+
+     4. Caching 
+ 
+            Parcel caches everything it builds to disk. If you restart the dev server, Parcel will only rebuild files that have changed since the
+        last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build, and           granularly invalidates the cache when something changes.
+ 
+        For example, if you change a configuration file, all of the source files that rely on that configuration will be rebuilt.
+ 
      5. HTTPS
 
   #  What is `.gitignore`? What should we add and not add into it?
