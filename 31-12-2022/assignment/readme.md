@@ -15,10 +15,11 @@
   
   #  What is difference between `dependencies` vs `devDependencies`?
   
-    | FirstName     | LastName      | City     |
-    | ------------- | ------------- | -------- |
-    | John          | Test1         | NewYork  |
-    | Bob           | Test2         | Toronto  |
+  | Dependency     | Dev Dependency      |
+  | -------------  | -------------       |
+  | Dependency is an object that contains the library, which your project requires for production environments and functioning effectively.           |devDependencies are those packages in the package.json file that you need only for project development purposes. Example- Babel, Webpack, etc. |
+  |You require these packages to test and run your project on the localhost. |These types of dependencies are required during the web application development process but not while testing or executing it|
+  |You can add dependencies to the package.json file by running the below command: **npm install <dependencies>** |For adding devDependencies to your project, run the below command: **npm install <dev_dependencies> --save-dev** |
 
 
      
