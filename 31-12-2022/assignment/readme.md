@@ -12,9 +12,16 @@
   4. 
   [Parcel-vs-Webpack-info jpg](https://user-images.githubusercontent.com/14870340/211184083-5df64012-b48d-4d47-bcad-9a2cb668268f.jpeg)
   
-  #  What is `Parcel/Webpack`? Why do we need it?
   
-  #  What is difference between `dependencies` vs `devDependencies`
+  #  What is difference between `dependencies` vs `devDependencies`?
+  
+    | FirstName     | LastName      | City     |
+    | ------------- | ------------- | -------- |
+    | John          | Test1         | NewYork  |
+    | Bob           | Test2         | Toronto  |
+
+
+     
   #  What is Tree Shaking?
   #  What is Hot Module Replacement?
   #  List down your favourite 5 superpowers of Parcel 
