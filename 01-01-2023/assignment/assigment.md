@@ -50,15 +50,15 @@ const element = <h1>{title}</h1>;
  + Another MIME type. src attribute will be ignored
 
 
- ##  { TitleComponent } vs { <TitleComponent /> } vs { <TitleComponent> </TitleComponent> } in JSX
+ #  { TitleComponent } vs {<TitleComponent /> } vs { <TitleComponent> </TitleComponent> } in JSX
 
  ** { TitleComponent }** -- this will be treated as variable or jsx expression, if no such variable is present,  you get a warning : 
   ```Functions are not valid as a React child. This may happen if you return a Component instead of <Component /> from render. Or maybe you meant to call this function rather than return it.```
   
   
-**{ <TitleComponent /> }** - this renders component and is self closing tag
+{ <TitleComponent /> }  - this renders component and is self closing tag
 
-**{ <TitleComponent> </TitleComponent> }** - if no children components , this will render as <TitleComponent />  else it will render along with its children.
+{ <TitleComponent> </TitleComponent> } - if no children components , this will render as <TitleComponent />  else it will render along with its children.
  
 
 
