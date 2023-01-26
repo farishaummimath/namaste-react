@@ -56,17 +56,23 @@ const heading = (
 	// <h1 id="title" key="headding-1">
 	<>
 		<h1> Namaste JS from JSX</h1>
-		<h1> Namaste JS from JSX</h1>
-		<h1> Namaste JS from JSX</h1>
+		{/* <h1> Namaste JS from JSX</h1>
+		<h1> Namaste JS from JSX</h1> */}
 	</>
 );
 // Composing Comopnentss
 
-// Functonal component
+// Functonal component - conventional way to capitalize name but not mandatory
+let xyz = 10;
 const HeaderComponent = () => {
 	return (
 		<div>
 			<Title />
+			{xyz}
+			{/* {Title()} */}
+			++
+			{"-"}
+			{80 + 5}
 			<h2>Namaste React functional component</h2>
 			<h2>This is a h2 tage</h2>
 			{heading}
@@ -77,4 +83,8 @@ const HeaderComponent = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(container);
 //passing a react element inside the root
+
+// render react element write --> root.render(heading);
+/// render react component write --> root.render(<HeaderComponent/>);
+
 root.render(<HeaderComponent />);
