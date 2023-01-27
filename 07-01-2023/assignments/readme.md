@@ -143,7 +143,9 @@ Person.defaultProps = { // default props
 export default Person;
 ```
 
+### 11. Can we use index as Key?
 
+Using index as key is not recommended.This can negatively impact performance and may cause issues with component state. 
 
 
 
