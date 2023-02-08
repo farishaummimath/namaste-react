@@ -1,0 +1,29 @@
+{
+	"name": "namaste-react-live-day5",
+	"version": "1.0.0",
+	"description": "this is live course on day 5 get hooked",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/farishaummimath/namaste-react.git"
+	},
+	"author": "Ummimath Farisha",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.20.12",
+		"babel-plugin-transform-remove-console": "^6.9.4",
+		"parcel": "^2.8.2",
+		"process": "^0.11.10"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"browserslist": [
+		"last 10 Chrome versions"
+	]
+}

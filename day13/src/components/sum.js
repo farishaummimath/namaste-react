@@ -1,0 +1,1 @@
+export const sumfunc = (a, b) => a + b;
