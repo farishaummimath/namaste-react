@@ -30,7 +30,7 @@ const Body = () => {
   return allRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
-    <>
+          <>
       <div className="search-container p-5 bg-pink-50 my-5">
         <input
           type="text"
